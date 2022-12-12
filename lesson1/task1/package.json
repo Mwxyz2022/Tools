@@ -4,8 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+    "copy:html": "cp ./src/index.html ./dist/index.html",
+    "copy:scripts": "cp  -R ./src/scripts ./dist/scripts",
+    "clean": "rm -rf ./dist",
+    "build": "npm-run-all clean build:styles copy:*"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "jest": "^29.3.1",
+    "npm-r": "^0.0.1",
+    "sass": "^1.56.2"
+  }
 }
