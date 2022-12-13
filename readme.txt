@@ -11,6 +11,13 @@ npm i -D npm-run-all
 npm i -D jest @babel/preset-env sass npm-run-all
 
 
+(В папке с package.json)
+.babelrc (files)
+{
+  "presets": ["@babel/preset-env"]
+}
+
+
  "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
