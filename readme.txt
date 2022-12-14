@@ -17,7 +17,6 @@ npm i -D jest @babel/preset-env sass npm-run-all
   "presets": ["@babel/preset-env"]
 }
 
-
  "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
@@ -28,7 +27,30 @@ npm i -D jest @babel/preset-env sass npm-run-all
     "build": "npm-run-all clean build:styles copy:*"
   },
 
-
-
-
 npm uninstall -D  jest @babel/preset-env sass npm-run-all
+
+// babel
+
+// task1 
+(инициализация зависимостей (file package.json))
+npm init -y
+
+npm i -D @babel/core @babel/cli
+
+В package.json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scripts": "babel ./src --out-dir=./dist"
+  },
+
+
+в файле .babelrc 
+{
+  "plugins": ["@babel/plugin-proposal-object-rest-spread"]
+}
+
+npm i -D @babel/plugin-proposal-object-rest-spread
+
+//// Presets
+
+npm i -D @babel/preset-env
