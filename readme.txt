@@ -53,4 +53,7 @@ npm i -D @babel/plugin-proposal-object-rest-spread
 
 //// Presets
 
+npm i -S core-js@3 ( для полифилов )
+
+npm i -D @babel/code @babel/cli (обязательно при установке зависимостей)
 npm i -D @babel/preset-env
