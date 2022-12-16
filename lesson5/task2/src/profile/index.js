@@ -1,4 +1,9 @@
-export const printProfile = (profileData) => {
-  const { name, company } = profileData;
-  console.log(`${name} from ${company}`);
-};
+import { fetchUser } from './gateway';
+import printProfile from './printProfile';
+
+fetchUser('github').then(({ name, location }) =>
+  printProfile({
+    name,
+    location,
+  })
+);
