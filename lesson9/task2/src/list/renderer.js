@@ -1,6 +1,6 @@
-import { storage, getItem } from './storage.js';
-import { onDeleteTask } from './deleteTask.js';
-import { checkboxChecked } from './checked.js';
+import { storage, getItem } from './storage';
+import { onDeleteTask } from './deleteTask';
+import { checkboxChecked } from './checked';
 
 export const renderTasks = () => {
   const listElem = document.querySelector('.list');

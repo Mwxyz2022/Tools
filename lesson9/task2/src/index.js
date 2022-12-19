@@ -1,9 +1,9 @@
-import { createNewTask } from './list/createTask.js';
-import { renderTasks } from './list/renderer.js';
+import { createNewTask } from './list/createTask';
+import { renderTasks } from './list/renderer';
 
-import { inputBtnElem } from './list/elements.js';
-import { getTasksListOfAPI } from './list/taskGateway.js';
-import { setItem, storage } from './list/storage.js';
+import { inputBtnElem } from './list/elements';
+import { getTasksListOfAPI } from './list/taskGateway';
+import { setItem, storage } from './list/storage';
 import './index.scss';
 
 inputBtnElem.addEventListener('click', createNewTask);
@@ -21,6 +21,3 @@ const onStorageChange = (e) => {
   }
 };
 window.addEventListener('storage', onStorageChange);
-
-// взять данные с сервера
-// обновить storage

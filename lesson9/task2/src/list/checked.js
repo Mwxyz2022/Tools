@@ -1,7 +1,7 @@
-import { renderTasks } from './renderer.js';
-import { storage, getItem, setItem } from './storage.js';
+import { renderTasks } from './renderer';
+import { storage, getItem, setItem } from './storage';
 
-import { updatedTaskAPI, getTasksListOfAPI } from './taskGateway.js';
+import { updatedTaskAPI, getTasksListOfAPI } from './taskGateway';
 
 export const checkboxChecked = (event) => {
   const isCheckbox = event.target.classList.contains('list__item-checkbox');
@@ -26,8 +26,3 @@ export const checkboxChecked = (event) => {
       renderTasks();
     });
 };
-
-// 1. подготовить данные.
-// 2. записать на сервер
-// 3. считать с сервера обновить Storage
-// 4. обновить ЮА

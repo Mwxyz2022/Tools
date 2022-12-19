@@ -1,7 +1,7 @@
-import { renderTasks } from './renderer.js';
-import { storage, setItem } from './storage.js';
-import { inputTaskElem } from './elements.js';
-import { createTaskToAPI, getTasksListOfAPI } from './taskGateway.js';
+import { renderTasks } from './renderer';
+import { storage, setItem } from './storage';
+import { inputTaskElem } from './elements';
+import { createTaskToAPI, getTasksListOfAPI } from './taskGateway';
 
 export const createNewTask = () => {
   const text = inputTaskElem.value;
